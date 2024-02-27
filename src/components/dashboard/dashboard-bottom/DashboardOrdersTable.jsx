@@ -1,24 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import React from 'react'
+import { useDataContext } from '../../../context/dataContext'
 
 const DashboardOrdersTable = () => {
 
-    const [orderItems, setOrderItems] = useState([])
+    const { orderItems} = useDataContext()
 
-    const fetchData = async () => {
-        try {
-            const res = await axios.get("https://minizuba-fn.azurewebsites.net/api/orderlines?type_id=5&quantity=10")
-        console.log("data", res.data.slice(0,20))
-        setOrderItems(res.data.slice(0,20))
-            
-        } catch (error) {
-            console.error("Error fetching data from database", error)
-        }
-        
-    }
-    useEffect(() => {
-        fetchData()
-    },[])
+    
   return (
     <div className='bg-white px-4 pt-3 pb-4 rounded-lg border border-gray-200 flex-1 '>
         <h1 className="font-medium text-gray-700 text-center">Recent Orders</h1>
