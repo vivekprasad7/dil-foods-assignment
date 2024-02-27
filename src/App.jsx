@@ -10,15 +10,12 @@ function App() {
   return (
     
       <div>
-        <h1 className='text-red-500 text-3xl'>home</h1>
-
         <Routes>
           <Route path="/" element={<Layout/>}>
               <Route index element={<Dashboard/>}/>
               <Route path="products" element={<Products/>}/>
           </Route>
         </Routes>
-       
       </div>
   
     
