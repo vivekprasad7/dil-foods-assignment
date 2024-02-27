@@ -3,7 +3,7 @@ import TopPieCard from './TopPieCard'
 
 const TopPieCards = () => {
   return (
-    <section className=' flex justify-center items-center gap-4 bg-slate-200 w-[100%]'>
+    <section className=' flex justify-between items-center flex-wrap gap-4 w-[100%]'>
         <TopPieCard
           colors={["#e4e8ef", "#475be8"]}
           percentFillValue={80}
