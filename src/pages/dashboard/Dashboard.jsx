@@ -1,15 +1,18 @@
 import React from 'react'
 import TopPieCards from '../../components/dashboard/dashboard-top/TopPieCards'
-import MidBarCharts from '../../components/dashboard/dashboard-mid/MidBarCharts'
+import MidBarChart from '../../components/dashboard/dashboard-mid/MidBarChart'
+import MidPieChart from '../../components/dashboard/dashboard-mid/MidPieChart'
 
 const Dashboard = () => {
+
+
   return (
-    <div className='flex flex-col gap-4 items-center justify-center '>
+    <div className='flex flex-col gap-4 w-full py-3'>
         <TopPieCards/>
 
-        <div className='flex flex-row gap-4 w-full'>
-            <MidBarCharts/>
-
+        <div className='flex flex-col md:flex-row gap-4 w-full py-6'>
+            <MidBarChart/>
+            <MidPieChart/>
         </div>
         
     </div>

@@ -1,62 +1,63 @@
-const data = [
+export const midBarChartData = [
     {
-        name: 'Jan',
-        Sales: 40000,
-        Revenue: 24000
+      month: "Jan",
+      loss: 90,
+      profit: 120,
     },
     {
-        name: 'Feb',
-        Sales: 30000,
-        Revenue: 13980
+      month: "Feb",
+      loss: 70,
+      profit: 110,
     },
     {
-        name: 'Mar',
-        Sales: 20000,
-        Revenue: 98000
+      month: "Mar",
+      loss: 45,
+      profit: 95,
     },
     {
-        name: 'Apr',
-        Sales: 27800,
-        Revenue: 39080
+      month: "April",
+      loss: 100,
+      profit: 80,
     },
     {
-        name: 'May',
-        Sales: 18900,
-        Revenue: 48000
+      month: "May",
+      loss: 60,
+      profit: 70,
     },
     {
-        name: 'Jun',
-        Sales: 23900,
-        Revenue: 38000
+      month: "Jun",
+      loss: 40,
+      profit: 60,
     },
     {
-        name: 'July',
-        Sales: 34900,
-        Revenue: 43000
+      month: "Jul",
+      loss: 35,
+      profit: 85,
     },
     {
-        name: 'Aug',
-        Sales: 20000,
-        Revenue: 98000
+      month: "Aug",
+      loss: 75,
+      profit: 100,
     },
     {
-        name: 'Sep',
-        Sales: 27800,
-        Revenue: 39080
+      month: "Sep",
+      loss: 70,
+      profit: 90,
     },
     {
-        name: 'Oct',
-        Sales: 18900,
-        Revenue: 48000
+      month: "Oct",
+      loss: 80,
+      profit: 110,
     },
     {
-        name: 'Nov',
-        Sales: 23900,
-        Revenue: 38000
+      month: "Nov",
+      loss: 85,
+      profit: 115,
     },
     {
-        name: 'Dec',
-        Sales: 34900,
-        Revenue: 43000
-    }
-];
+      month: "Dec",
+      loss: 95,
+      profit: 125,
+    },
+  ];
+  
