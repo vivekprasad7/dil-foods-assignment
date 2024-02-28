@@ -3,8 +3,9 @@ import { useDataContext } from '../../../context/dataContext'
 
 const DashboardOrdersTable = () => {
 
-    const { orderItems} = useDataContext()
+    const { orderItems,dataState} = useDataContext()
 
+    console.log("comp data state", dataState)
     
   return (
     <div className='bg-white px-4 pt-3 pb-4 rounded-lg border border-gray-200 flex-1 '>
@@ -22,7 +23,7 @@ const DashboardOrdersTable = () => {
                 </thead>
                 <tbody>
                     {
-                        orderItems.map((item) => {
+                        dataState?.orderItems.map((item) => {
                                 const {OrderID, Description, StockItemID, Quantity, UnitPrice} = item
                             return(
                                 <tr key={OrderID}>
