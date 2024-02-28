@@ -1,12 +1,21 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import TopPieCards from '../../components/dashboard/dashboard-top/TopPieCards'
+import DashboardOrdersTable from '../../components/dashboard/dashboard-bottom/DashboardOrdersTable'
 
 const Products = () => {
-  return (
-    <div>
-        <h1>THis is products page</h1>
-        <p>Go to Dashboard Page. <Link to="/"> Dashboard</Link></p>
 
+
+  return (
+    <div className='flex flex-col gap-4 w-full py-3'>
+        <TopPieCards/>
+
+
+        <div className='flex flex-col md:flex-row gap-4 w-full py-6'>
+          <DashboardOrdersTable/>
+        </div>
+
+      
+        
     </div>
   )
 }
