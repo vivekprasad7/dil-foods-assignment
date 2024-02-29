@@ -14,7 +14,7 @@ export const DataContextProvider = ({children}) => {
     const fetchData = async () => {
         try {
             const res = await axios.get(`https://minizuba-fn.azurewebsites.net/api/orderlines?type_id=${dataState?.packageTypeID}`)
-        // console.log("data", res.data.slice(0,20))
+        console.log("data", res.data.slice(0,20))
         const data = res.data.slice(0,30)
         dataDispatch({type:"FETCH_ORDER_ITEMS", payload: data})
         setOrderItems(res.data.slice(0,50))

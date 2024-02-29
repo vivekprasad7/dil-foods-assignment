@@ -15,7 +15,7 @@ const Sidebar = () => {
 
 
   return (
-    <div className={`hidden transition-all duration-200 ${showSidebar ? "w-60" : "w-20"} md:flex md:flex-col  p-2 py-3 shadow-lg h-full`}>
+    <div className={`hidden transition-all duration-200 ${showSidebar ? "w-60" : "w-20"} md:flex md:flex-col  p-2 py-3 shadow-lg h-full`} data-testid="sidebar">
         <div className='flex justify-between items-center px-3'>
             <div className={` transition-all duration-200 ${showSidebar ? "flex justify-between items-center" :"w-0"}`}>
         <FcLike className={` transition-all duration-200 ${ showSidebar ? "" : "w-0"}`} fontSize={36} />
