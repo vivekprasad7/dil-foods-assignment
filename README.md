@@ -4,6 +4,8 @@
 
 This project aims to create a responsive and interactive dashboard that visualises data from a fictional e-commerce platform.
 
+![image](https://github.com/vivekprasad7/dil-foods-assignment/assets/26505800/9fcd9c5f-8a24-4c37-ab46-3b4715d4dfeb)
+
 ## Implemented Features in Table using useContext and useReducer
 
 - Packaging orders displayed in a list view, sorted by OrderLineID.
