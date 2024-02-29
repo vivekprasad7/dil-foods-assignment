@@ -28,13 +28,13 @@ export const SIDEBAR_LINKS = [
     },
     {
         key:'customers',
-        label:'customers',
+        label:'Customers',
         path:'/customers',
         icon:<HiOutlineUsers />
     },
     {
         key:'statistics',
-        label:'statistics',
+        label:'Statistics',
         path:'/statistics',
         icon:<HiOutlineShoppingCart />
     },

@@ -2,13 +2,12 @@ import React from 'react'
 import TopPieCards from '../../components/dashboard/dashboard-top/TopPieCards'
 import DashboardOrdersTable from '../../components/dashboard/dashboard-bottom/DashboardOrdersTable'
 
-const Products = () => {
+const Statistics = () => {
 
 
   return (
     <div className='flex flex-col gap-4 w-full py-3'>
-                      <h1 className='m-auto text-center'>Products Page</h1>
-
+        <h1 className='m-auto text-center'>Statistics Page</h1>
         <TopPieCards/>
 
 
@@ -22,4 +21,4 @@ const Products = () => {
   )
 }
 
-export default Products
+export default Statistics

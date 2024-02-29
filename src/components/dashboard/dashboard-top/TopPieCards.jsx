@@ -3,13 +3,13 @@ import TopPieCard from './TopPieCard'
 
 const TopPieCards = () => {
   return (
-    <section className=' flex justify-between items-center flex-wrap gap-4 w-[100%]'>
+    <section className=' flex flex-wrap  md:flex-row justify-between items-center gap-4 w-[100%]'>
         <TopPieCard
           colors={["#e4e8ef", "#475be8"]}
           percentFillValue={80}
           cardInfo={{
             title: "Todays Sales",
-            value: "75,121 Rupees",
+            value: "75,121",
             text: "121 Orders Fulfilled",
           }}
         />
@@ -18,7 +18,7 @@ const TopPieCards = () => {
         percentFillValue={50}
         cardInfo={{
           title: "Todays Expenses",
-          value: "52,103 Rupees",
+          value: "52,103",
           text: "Accumulative",
         }}
       />
@@ -27,8 +27,8 @@ const TopPieCards = () => {
         percentFillValue={40}
         cardInfo={{
           title: "Today's Profit",
-          value: "23018 Rupees",
-          text: "Available to payout",
+          value: "23018",
+          text: "Available",
         }}
       />
 

@@ -88,12 +88,12 @@ const DashboardOrdersTable = () => {
 
     return (
         <div className='bg-white px-4 pt-3 pb-4 rounded-lg border border-gray-200 flex-1 shadow-lg'>
-            <h1 className="font-medium text-gray-700 text-center">Products Page - Recent Orders</h1>
+            <h1 className="font-medium text-gray-700 text-center">Advanced Table - Recent Orders</h1>
 
-        <div className='flex justify-around py-5'>
-            <div className='border border-solid-gray-200 p-2 w-120'>
+        <div className='flex flex-wrap md:flex-row  justify-between items-center py-5'>
+            <div className='border border-solid-gray-200 p-2 rounded-lg my-2'>
                 <input 
-                className='p-2 m-1'
+                className='p-1 '
                 type="text" 
                 name="quantityFilter"
                 placeholder='Enter Quantity...'
@@ -101,13 +101,13 @@ const DashboardOrdersTable = () => {
                 onChange={(e) => setQuantityFilter(e.target.value)}
                 />
                 <button
-                className='bg-slate-500 text-white p-2 rounded-lg'
+                className='bg-indigo-500 text-white p-2 rounded-lg'
                  onClick={handleFilterByQuantity}>Filter By Quantity</button>
             </div>
 
-            <div className='border border-solid-gray-200 p-2 w-120'>
+            <div className='border border-solid-gray-200 p-2 w-fit rounded-lg  my-2'>
                 <input 
-                className='p-2 m-1'
+                className='p-1 '
                 type="text" 
                 name="packageTypeID"
                 placeholder='Enter Package Type ID...'
@@ -115,7 +115,7 @@ const DashboardOrdersTable = () => {
                 onChange={(e) => setPackageTypeID(e.target.value)}
                 />
                 <button
-                className='bg-slate-500 text-white p-2 rounded-lg'
+                className='bg-indigo-500 text-white p-2 rounded-lg'
                  onClick={handleFetchByPackageID}>Fetch Items By PackageType {packageTypeID}</button>
             </div>
 

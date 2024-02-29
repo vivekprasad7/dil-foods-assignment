@@ -25,7 +25,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 export default function MidPieChart() {
 	return (
 		<div className="w-[20rem] h-[24rem] bg-white p-4 rounded-lg border border-gray-200 flex flex-col m-auto shadow-lg">
-			<strong className="text-gray-700 font-medium text-center">Buyer Profile</strong>
+			<strong className="text-gray-700 font-bold text-center">Buyer Profile</strong>
 			<div className="mt-3 w-full  h-full flex-1 text-xs">
 				<ResponsiveContainer width="100%" height="100%">
 					<PieChart width={400} height={300}>

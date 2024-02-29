@@ -26,8 +26,8 @@ const TopPieCard = ({colors, percentFillValue, cardInfo}) => {
     <div className='bg-white flex p-2 py-3 m-auto my-2 w-[300px] rounded-lg shadow-lg'>
         <div className=''>
             <h5 className='font-bold'>{title}</h5>
-            <div>{value}</div>
-            <p>{text}</p>
+            <div className='text-emerald-500 py-1'>{value} ₹</div>
+            <p className='text-slate-400'>{text}</p>
         </div>
         <div>
             <PieChart width={100} height={100}>

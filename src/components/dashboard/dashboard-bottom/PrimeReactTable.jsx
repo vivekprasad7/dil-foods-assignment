@@ -22,9 +22,10 @@ const PrimeReactTable = () => {
 
   return (
     <div className='bg-white px-4 pt-3 pb-4 rounded-lg border border-gray-200 flex-1 '>
-                <h1 className="font-medium text-gray-700 text-center">Prime React Table</h1>
+                <h1 className="font-bold text-gray-700 text-center">Recent Orders</h1>
 
-        <div>
+        <div className='flex justify-center items-center py-2'>
+    <label className='font-medium text-slate-500'>Search: </label>
             <InputText 
             className='border border-slate-200 p-2 m-2'
              onInput={(e) => setFilters({

@@ -26,7 +26,7 @@ import { midBarChartData } from "../../../data/MidBarChart";
   
     return (
       <div className="h-[24rem] w-[100%] p-2 rounded-lg bg-white shadow-lg">
-      <h1 className="font-medium text-gray-700 text-center">Profit and Loss</h1>
+      <h1 className="font-bold text-gray-700 text-center">Profit and Loss</h1>
         <div className="h-full w-full p-4">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart
