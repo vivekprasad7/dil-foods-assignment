@@ -15,10 +15,10 @@ const Sidebar = () => {
 
 
   return (
-    <div className={`hidden transition-all duration-300 ${showSidebar ? "w-60" : "w-20"} md:flex md:flex-col  p-2 py-3 shadow-lg h-full`}>
+    <div className={`hidden transition-all duration-200 ${showSidebar ? "w-60" : "w-20"} md:flex md:flex-col  p-2 py-3 shadow-lg h-full`}>
         <div className='flex justify-between items-center px-3'>
-            <div className={` transition-all duration-300 ${showSidebar ? "flex justify-between items-center" :"w-0"}`}>
-        <FcLike className={` transition-all duration-300 ${ showSidebar ? "" : "w-0"}`} fontSize={36} />
+            <div className={` transition-all duration-200 ${showSidebar ? "flex justify-between items-center" :"w-0"}`}>
+        <FcLike className={` transition-all duration-200 ${ showSidebar ? "" : "w-0"}`} fontSize={36} />
         <h1 className={`overflow-hidden transition-all ${ showSidebar ? "px-2 text-2xl w-32" : "w-0"}`}>Foods</h1>
             </div>
             <button onClick={() => setShowSidebar(!showSidebar)} className='bg-slate-100 p-3 rounded-lg  cursor-pointer'>
@@ -62,7 +62,7 @@ function SidebarLink({ link, showSidebar}) {
        `}
       >
         <span className='text-xl'>{link.icon}</span>
-        <span className={` transition-all duration-300 ${showSidebar ? "w-40" : "hidden"}  w-52 ml-3`}>{link.label}</span>
+        <span className={` transition-all duration-200 ${showSidebar ? "w-40" : "hidden"}  w-52 ml-3`}>{link.label}</span>
       </NavLink>
     );
   }

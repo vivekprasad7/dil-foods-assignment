@@ -223,7 +223,7 @@ const DashboardOrdersTable = () => {
                                         <td>{StockItemID}</td>
                                         <td>{Quantity}</td>
                                         <td>{UnitPrice}</td>
-                                        <td className={colorClasses[item.PackageTypeID]}>{PackageTypeID}</td>
+                                        <td>{PackageTypeID}</td>
                                     </tr>
                                 )
                             }) : ''
